@@ -5,21 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alumni Connect</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-<!--  <header>
-    <h1>Welcome to </h1>
-    <p></p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav> -->
-
   <body>
     <header class="header">
         <h1 class="logo">Alumni Connect</h1>
@@ -27,7 +14,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#About">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -40,25 +27,12 @@
             <a href="#" class="btn btn-primary">Check Events</a>
         </div>
     </section>
-
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <section id="events">
-    <h2>Events</h2>
-    <div class="event-category">
-      <h3>Professional Development</h3>
+<section id="events">
+  <h2>Events</h2>
+  <div class="event-category">
+    <h3>Professional Development</h3>
+    <div class="events-container">
       <div class="event">
         <h4>Workshop: Navigating Your Career Path</h4>
         <p><strong>Date:</strong> March 15, 2024</p>
@@ -78,9 +52,11 @@
         <p><strong>Description:</strong> Learn essential interview skills and techniques to ace your next job interview from seasoned HR professionals.</p>
       </div>
     </div>
+  </div>
 
-    <div class="event-category">
-      <h3>Campus Events</h3>
+  <div class="event-category">
+    <h3>Campus Events</h3>
+    <div class="events-container">
       <div class="event">
         <h4>Alumni Sports Day</h4>
         <p><strong>Date:</strong> June 20, 2024</p>
@@ -100,26 +76,85 @@
         <p><strong>Description:</strong> Join us for a nostalgic evening as we reconnect with old friends and reminisce about our time at university.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="about">
-    <h2>About</h2>
-    <p>Alumni Connect is powered by a team of dedicated professionals with expertise in web development, design, and alumni relations. We are committed to providing a seamless and engaging experience for our users while fostering a strong sense of community among alumni.</p>
+    <div class="container">
+      <h1>OUR TEAM</h1>
+      <p>Alumni Connect is powered by a team of dedicated professionals with expertise in web development, design, and alumni relations. We are committed to providing a seamless and engaging experience for our users while fostering a strong sense of community among alumni.</p>
+      <div class="team-members">
+        <div class="profile">
+          <div class="img-box">
+            <img src="images/team1.jpg" class="img-responsive">
+          </div>
+          <h2>Azeez Damilare</h2>
+          <h3>Alumni Engagement Coordinator</h3>
+          <p>Responsible for developing and implementing strategies to actively engage alumni in the organization's initiatives, events, and programs.</p>
+        </div>
+  
+        <div class="profile">
+          <div class="img-box">
+            <img src="images/team2.jpg" class="img-responsive">
+          </div>
+          <h2>Christine</h2>
+          <h3>Alumni Outreach Specialist</h3>
+          <p>Focuses on reaching out to alumni through various communication channels to foster connections, gather feedback, and promote participation in alumni activities.</p>
+        </div>
+  
+        <div class="profile">
+          <div class="img-box">
+            <img src="images/team3.jpg" class="img-responsive">
+          </div>
+          <h2>Oluchi</h2>
+          <h3>Alumni Relations Manager</h3>
+          <p>Oversees the overall relationship-building efforts with alumni, including maintaining communication, organizing alumni events, and managing alumni databases.</p>
+        </div>
+  
+        <div class="profile">
+          <div class="img-box">
+            <img src="images/team4.jpg" class="img-responsive">
+          </div>
+          <h2>Joyce</h2>
+          <h3>Alumni Program Director</h3>
+          <p>Leads the development and execution of comprehensive alumni programs, including mentorship programs, networking events, and career development opportunities, to support and engage alumni.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <div class="container-contact">
+      <h2>Contact Us</h2>
+      <div class="contact-wrapper">
+        <div class="contact-form">
+          <h3>Send Us a message</h3>
+          <form action="">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name">
+            </div>
 
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email">
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="fas fa-phone"></i>+21 123 456 7890</p>
+          <p><i class="fas fa-envelope"></i>info@example.com</p>
+          <p><i class="fas fa-map-marker"></i>123 Main Street, Anytown USA</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <p>&copy; 2024 Alumni Connect. All rights reserved.</p>
   </footer>
